@@ -43,23 +43,29 @@ nav {
 
 
 .container-wrapper {
-    display: flex;
-    justify-content: space-around; /* Distribuye el espacio alrededor de los contenedores */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center; /* Distribuye el espacio alrededor de los contenedores */
     padding: 20px;
 }
 
 .container {
-    position: relative;
-    font-size: 14px;
+    position:relative;
+    font-size: 15px;
     border: 3px solid rgba(255, 255, 255, 0.6);
-    border-radius: 0.4rem;
+    border-radius: 20px;
     line-height: 25px;
     width: 400px;
-    overflow: hidden;
+    overflow:hidden;
     transition: all 0.5s ease;
-    margin: 0 10px; /* Espacio entre contenedores */
+    margin: 0 30px; /* Espacio entre contenedores */
     background-color: #444;
-    padding: px;
+    padding: 0px;
+    margin-top: 50px;
+}
+
+.container:hover {
+    transform: scale(1.05);
 }
 
 .movie-image {
@@ -84,10 +90,3 @@ nav {
     font-size: 15px;
     color: black;
 }
-
-
-
-
-
-
-    
