@@ -41,7 +41,7 @@ nav {
 }
 
 .menu li a:hover {
-    background-color: #555;
+    background-color: 555;
 }
 
 .dropdown {
@@ -69,8 +69,8 @@ nav {
 }
 
 .search-container {
-    margin-left: auto; /* Mueve el buscador a la esquina derecha */
-    margin-right: 20px; /* Espacio entre el buscador y el menú */
+    margin-left: auto; 
+    margin-right: 20px; 
 }
 
 .search-container form {
@@ -83,17 +83,10 @@ nav {
     border-radius: 4px;
 }
 
-.search-container button {
+.search-container1 input[type="text"] {
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
-}
-
-.search-container button:hover {
-    background-color: #45a049;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .nav-lado{
@@ -115,14 +108,14 @@ nav {
 .container {
     position:relative;
     font-size: 15px;
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    border: 5px solid rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     line-height: 25px;
     width: 400px;
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; /* Espacio entre contenedores */
-    background-color: #444;
+    background-color: #696969;
     padding: 0px;
     margin-top: 50px;
 }
@@ -137,11 +130,11 @@ nav {
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; /* Espacio entre contenedores */
-    background-color: #444;
+    background-color: #696969;
     padding: 0px;
     margin-top: 50px;
 }
-
+     
 .container:hover {
     transform: scale(1.05);
 }
@@ -166,7 +159,8 @@ nav {
 .movie-details p {
     margin-bottom: 5px;
     font-size: 15px;
-    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: 555;
 }
 
 footer {
@@ -237,20 +231,3 @@ footer {
     margin: 5px 0;
 }
 
-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-button:hover::before {
-    content: attr(title);
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    z-index: 1;
-}
