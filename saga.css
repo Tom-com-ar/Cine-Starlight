@@ -111,19 +111,20 @@ nav {
 .movie-details p {
     margin-bottom: 5px;
     font-size: 15px;
-    color: black;
+    color: white;
 }
 
 .saga-title::before {
-    content: "★"; /* Usa el símbolo de estrella */
-    color: gold; /* Color dorado para la estrella */
+    content: "★"; 
+    color: gold; 
     margin-right: 10px;
     font-size: 140px;
+
 }
 
 .saga-titlen::before {
-    content: "★"; /* Usa el símbolo de estrella */
-    color: gold; /* Color dorado para la estrella */
+    content: "★"; 
+    color: gold; 
     margin-right: 10px;
     font-size: 140px;
 }
@@ -137,7 +138,7 @@ nav {
     margin-right: auto;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-   
+    color: white;  
 }
 
 .saga-title {
@@ -147,6 +148,7 @@ nav {
     margin-right: auto;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+  
    
 }
 
