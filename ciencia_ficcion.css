@@ -6,14 +6,21 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #333;
+    background: no-repeat;
+    background-image: url(imagenes/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
 }
 
 header {
-    background-color: #024cb5;
+    background-color: #ffca42b5;
     color: #fff;
-    padding: 15px 0;
+    padding: 10px 0;
 }
+
 
 nav {
     display: flex;
@@ -108,8 +115,8 @@ nav {
 }
 
 footer {
-    background-color: #024cb5;
-    color: #fff;
+    background-color: #ff5542d1;
+    color: white;
     padding: 20px 0;
     text-align: center;
 }
@@ -124,7 +131,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 120px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 120px; 
 }
 
 .footer-links ul {
@@ -150,7 +157,7 @@ footer {
 
 .footer-links ul li a:hover {
     background-color: #fff;
-    color: #024cb5;
+    color: #fff;
 }
 
 .footer-bottom {
