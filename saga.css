@@ -150,7 +150,7 @@ footer {
 }
 
 .footer-content {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -159,7 +159,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 120px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 120px; 
 }
 
 .footer-links ul {
