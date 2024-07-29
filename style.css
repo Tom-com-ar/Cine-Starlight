@@ -101,7 +101,7 @@ nav {
 .container-wrapper {
     display:flex;
     flex-wrap:wrap;
-    justify-content:center; /* Distribuye el espacio alrededor de los contenedores */
+    justify-content:center; 
     padding: 20px;
 }
 
