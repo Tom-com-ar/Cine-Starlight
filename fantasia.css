@@ -22,7 +22,6 @@ header {
 }
 
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -53,21 +52,21 @@ nav {
 .container-wrapper {
     display:flex;
     flex-wrap:wrap;
-    justify-content:center; /* Distribuye el espacio alrededor de los contenedores */
+    justify-content:center; 
     padding: 20px;
 }
 
 .container {
     position:relative;
     font-size: 15px;
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    border: 5px solid rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     line-height: 25px;
     width: 400px;
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; /* Espacio entre contenedores */
-    background-color: #444;
+    background-color: #696969;
     padding: 0px;
     margin-top: 50px;
 }
@@ -82,11 +81,11 @@ nav {
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; /* Espacio entre contenedores */
-    background-color: #444;
+    background-color: #696969;
     padding: 0px;
     margin-top: 50px;
 }
-
+     
 .container:hover {
     transform: scale(1.05);
 }
@@ -111,45 +110,8 @@ nav {
 .movie-details p {
     margin-bottom: 5px;
     font-size: 15px;
-    color: white;
-}
-
-.saga-title::before {
-    content: "★"; 
-    color: gold; 
-    margin-right: 10px;
-    font-size: 140px;
-
-}
-
-.saga-titlen::before {
-    content: "★"; 
-    color: gold; 
-    margin-right: 10px;
-    font-size: 140px;
-}
-
-
-
-.saga-titlen {
-    font-size: 140px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;  
-}
-
-.saga-title {
-    font-size: 140px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-  
-   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: 555;
 }
 
 footer {
