@@ -91,11 +91,13 @@ nav {
     font-size:25px ;
     color: white;
 }
+
 .movie-details p {
     margin-bottom: 5px;
     font-size: 15px;
     color: black;
-    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
 .saga-title::before {
@@ -119,7 +121,6 @@ nav {
     margin-right: auto;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-
     color: white;  
 }
 
