@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 body {
     font-family: Arial, sans-serif;
@@ -25,26 +27,62 @@ nav {
     align-items: center;
     padding: 0 20px;
 }
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
 .menu {
     list-style-type: none;
     display: flex;
 }
+
 .menu li {
     margin-left: 20px;
 }
+
 .menu li a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
+
 .menu li a:hover {
-    background-color: #555;
+    background-color: 555;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    display: block;
 }
 .container-wrapper {
     display:flex;
     flex-wrap:wrap;
-    justify-content:center; /* Distribuye el espacio alrededor de los contenedores */
+    justify-content:center; 
     padding: 20px;
+}
+
+.nav-lado{
+    width: 100%;
 }
 .container {
     position:relative;
@@ -55,7 +93,7 @@ nav {
     width: 400px;
     overflow:hidden;
     transition: all 0.5s ease;
-    margin: 0 30px; /* Espacio entre contenedores */
+    margin: 0 30px; 
     background-color: #444;
     padding: 0px;
     margin-top: 50px;
@@ -69,7 +107,7 @@ nav {
     width: 400px;
     overflow:hidden;
     transition: all 0.5s ease;
-    margin: 0 30px; /* Espacio entre contenedores */
+    margin: 0 30px; 
     background-color: #444;
     padding: 0px;
     margin-top: 50px;
