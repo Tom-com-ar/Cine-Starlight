@@ -9,7 +9,7 @@ if(!$conexion){
     die('Error de conexión'.mysql_error());
 }
 
-$sql ="SELECT Nombre, Apellidos	, Teléfono	, Email	, Mensaje	 FROM comentarios";
+$sql ="SELECT Nombre, Apellidos	, Teléfono	, Email	, Mensaje FROM comentarios";
 
 $result = $conexion->query($sql);
 

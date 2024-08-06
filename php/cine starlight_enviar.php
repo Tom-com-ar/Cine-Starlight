@@ -10,13 +10,13 @@ else{
     echo  "Conexion realiza con exito ";
 }
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$telefono = $_POST['telefono'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
+$nombre = $_POST['Nombre'];
+$apellidos = $_POST['Apellidos'];
+$telefono = $_POST['Teléfono'];
+$email = $_POST['Email'];
+$mensaje = $_POST['Mensaje'];
 
-$sql = "INSERT INTO `comentarios`(`nombre`, `apellido`, `telefono`, `email`, `mensaje`) VALUES ('$nombre','$apellido','$telefono','$email','$mensaje')";
+$sql = "INSERT INTO `comentarios`(`Nombre`, `Apellidos`, `Teléfono`, `Email`, `Mensaje`) VALUES ('$nombre','$apellido','$telefono','$email','$mensaje')";
 
 if(mysqli_query($conexion, $sql)){
     $sucess = "El ingreso ha sido satisfactorio ";
