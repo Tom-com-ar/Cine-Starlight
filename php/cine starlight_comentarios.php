@@ -25,5 +25,5 @@ if ($result -> num_rows > 0){
 $conexion -> close();
 
 ?>
-</body>
+</body>  
 </html>    

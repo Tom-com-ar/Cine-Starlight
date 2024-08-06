@@ -16,7 +16,7 @@ $telefono = $_POST['Teléfono'];
 $email = $_POST['Email'];
 $mensaje = $_POST['Mensaje'];
 
-$sql = "INSERT INTO `comentarios`(`Nombre`, `Apellidos`, `Teléfono`, `Email`, `Mensaje`) VALUES ('$nombre','$apellido','$telefono','$email','$mensaje')";
+$sql = "INSERT INTO `comentarios`(`Nombre`, `Apellidos`, `Teléfono`, `Email`, `Mensaje`) VALUES ('$nombre','$apellidos','$telefono','$email','$mensaje')";
 
 if(mysqli_query($conexion, $sql)){
     $sucess = "El ingreso ha sido satisfactorio ";
