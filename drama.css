@@ -215,3 +215,16 @@ footer {
     margin: 5px 0;
 }
 
+.comentarios-icon {
+    margin-left: 47px;
+    margin-top: 18px;
+    width: 70px;
+    height: auto;
+}
+
+.footer-linkscomentario ul li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    color: #ffffff00;
+}
