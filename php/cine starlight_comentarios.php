@@ -3,19 +3,19 @@
 
 <?php
 
-$conexion = new mysqli('localhost','root','','cine starlight');
+$conexion = new mysqli('localhost','root','','proyecto redes');
 
-if(!$conexion){
-    die('Error de conexión'.mysql_error());
+if($conexion->connect_error){
+    die('Error de conexión: ' . $conexion->connect_error);
 }
 
-$sql ="SELECT Nombre, Apellidos	, Teléfono	, Email	, Mensaje FROM comentarios";
+$sql =  "SELECT Nombre,Apellidos,Teléfono,Email,Mensaje FROM comentarios";
 
 $result = $conexion->query($sql);
 
-if ($result -> num_rows > 0){
+if ($result->num_rows > 0){
     while ($row = $result -> fetch_assoc()){
-        echo " Nombre: " .$row["Nombre"]. " Apellidos	: " .$row["Apellidos	"]. " Teléfono	: " .$row["Teléfono	"].   " Email	: " .$row["Email	"]. " Mensaje	: " .$row["Mensaje	"]."<br>";
+        echo  "Nombre: ".$row["Nombre"]."Apellidos: ".$row["Apellidos"]." Teléfono: ".$row["Teléfono"]." Email: " .$row["Email"]." Mensaje: " .$row["Mensaje"]."<br>";
 
     }
 }else{

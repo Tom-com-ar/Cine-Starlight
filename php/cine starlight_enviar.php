@@ -1,6 +1,6 @@
 <?php
 
-$conexion = new mysqli('localhost','root','','cine starlight');
+$conexion = new mysqli('localhost','root','','proyecto redes');
 
 if(!$conexion){
     die('Error de conexión'.mysql_error());
@@ -11,16 +11,16 @@ else{
 }
 
 $nombre = $_POST['Nombre'];
-$apellidos = $_POST['Apellidos'];
+$apellido = $_POST['Apellidos'];
 $telefono = $_POST['Teléfono'];
 $email = $_POST['Email'];
 $mensaje = $_POST['Mensaje'];
 
-$sql = "INSERT INTO `comentarios`(`Nombre`, `Apellidos`, `Teléfono`, `Email`, `Mensaje`) VALUES ('$nombre','$apellidos','$telefono','$email','$mensaje')";
+$sql = "INSERT INTO `comentarios`(`Nombre`, `Apellidos`, `Teléfono`, `Email`, `Mensaje`) VALUES ('$nombre','$apellido','$telefono','$email','$mensaje')";
 
 if(mysqli_query($conexion, $sql)){
-    $sucess = "El ingreso ha sido satisfactorio ";
-    echo $sucess;
+    echo = "El ingreso ha sido satisfactorio ";
+    
 }else{
     echo "Error al ingresar datos ".mysqli_error($conexion);
 }

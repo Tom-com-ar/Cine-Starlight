@@ -188,11 +188,11 @@ label {
 }
 
 input {
-    width: 110%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #333;
     color: #fff;
 }
