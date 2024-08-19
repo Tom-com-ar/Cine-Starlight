@@ -9,12 +9,17 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background: no-repeat;
-    background-image: url(imagenes/fondo.jpg);
+    background-image: url(../imagenes/fondo.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     width: auto;
     height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
@@ -169,4 +174,68 @@ footer {
     list-style: none;
     font-size: 14px;
     color: #ffffff00;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.movie-container {
+    border: 10px solid #ffffff74;
+    padding: 20px;
+    width: 1000px;
+    display: flex;
+    border-radius: 1rem;
+    overflow: visible;
+    background: grey;
+    position: relative;
+    z-index: 1;
+
+}
+
+.movie-image img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-details h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.movie-genres {
+    margin: 10px 0;
+    color: #555;
+}
+
+.movie-genres span {
+    margin-right: 10px;
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.movie-rating span {
+    font-size: 30px;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.movie-details p {
+    margin: 5px 0;
+    color: #ffffff;
 }
