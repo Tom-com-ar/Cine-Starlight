@@ -88,14 +88,14 @@ nav {
 .container {
     position:relative;
     font-size: 15px;
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    border: 3px solid rgba(255, 255, 255);
     border-radius: 20px;
     line-height: 25px;
     width: 400px;
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; 
-    background-color: #444;
+    background-color: #696969;
     padding: 0px;
     margin-top: 50px;
 }
@@ -109,7 +109,7 @@ nav {
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; 
-    background-color: #444;
+    background-color: #696969;
     padding: 0px;
     margin-top: 50px;
 }
@@ -189,7 +189,8 @@ footer {
     padding: 0 20px;
 }
 .footer-logo img {
-    width: 120px; 
+    width: 120px;
+    background-color: black; 
 }
 .footer-links ul {
     list-style-type: none;

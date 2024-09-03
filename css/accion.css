@@ -167,7 +167,8 @@ footer {
 }
 
 .footer-logo img {
-    width: 120px; 
+    width: 120px;
+    background-color: black;
 }
 
 .footer-links ul {

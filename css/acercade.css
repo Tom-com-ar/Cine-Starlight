@@ -83,11 +83,17 @@ nav {
     width: 100%;
 }
 
-.container-wrapper {
+.container{
+    background-color: black;
     display:flex;
     flex-wrap:wrap;
     justify-content:center; 
     padding: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    justify-content:center;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 footer {
