@@ -19,7 +19,7 @@ $mensaje = $_POST['mensaje'];
 $sql = "INSERT INTO 'comentarios' ('Nombre', 'Apellidos', 'Teléfono', 'Email', 'Mensaje') 
         VALUES ('$nombre', '$apellido', '$telefono', '$email', '$mensaje')";
 
-// Ejecutar la consulta y verificar si fue exitosa
+
 if (mysqli_query($sql) === TRUE) {
     echo "El ingreso ha sido satisfactorio. Gracias por tu comentario.";
 } else {

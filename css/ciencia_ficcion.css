@@ -101,7 +101,7 @@ nav {
     overflow:hidden;
     transition: all 0.5s ease;
     margin: 0 30px; 
-    background-color: #696969;
+    background-color: #696969!IMPORTANT;
     padding: 0px;
     margin-top: 50px;
 }
@@ -192,7 +192,7 @@ footer {
 
 .footer-links ul li a:hover {
     background-color: #fff;
-    color: #fff;
+    color: #000000;
 }
 
 .footer-bottom {

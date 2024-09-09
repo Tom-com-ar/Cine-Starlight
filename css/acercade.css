@@ -113,7 +113,8 @@ footer {
 }
 
 .footer-logo img {
-    width: 120px; 
+    width: 120px;
+    background-color: black;
 }
 
 .footer-links ul {
@@ -139,7 +140,7 @@ footer {
 
 .footer-links ul li a:hover {
     background-color: #fff;
-    color: #fff;
+    color: #000000;
 }
 
 .footer-bottom {
