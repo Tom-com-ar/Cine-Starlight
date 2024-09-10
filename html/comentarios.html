@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon"type="image/x-icon"href="../imagenes/logo.png">
     <link rel="stylesheet" href="../css/comentarios.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Comentarios - Cine Starlight</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         </nav>
     </header>
 <main>
-    <div class="register-container">
+    <div class="register-container" id="comentarios">
         <form action="../php/ingreso.php" method="post">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="NAMEPHP" required>
@@ -33,6 +34,27 @@
             <button class="btn"><h2>Enviar</h2></button>
         </form>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#comentarios').on('submit', function(event) {
+                event.preventDefault(); // Evita la recarga de la página
+
+                $.ajax({
+                    type: 'POST',
+                    url: '../php/ingreso.php', // El archivo PHP que procesa el formulario
+                    data: $(this).serialize(), // Serializa los datos del formulario
+                    success: function(response) {
+                        alert(response); // Muestra la respuesta del servidor (éxito o error)
+                    },
+                    error: function() {
+                        alert('Hubo un error al enviar el comentario.');
+                    }
+                });
+            });
+        });
+    </script>
+
 </main>
     <footer>
         <div class="footer-content">
